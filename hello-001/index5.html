@@ -10,13 +10,59 @@
         border: 1px solid blue;
         margin: 5px;
       }
+
+      div:nth-of-type(1) {
+        background-color: #ddd;
+      }
+
+      #div2 {
+        background-color: blue;
+      }
+
+      div#div3 {
+        border: 1px solid green;
+      }
+
+      .div4 {
+        background: gold;
+      }
     </style>
   </head>
   <body>
     <div>박스1</div>
-    <div>박스2</div>
-    <div>박스3</div>
-    <div>박스4</div>
-    <div>박스5</div>
+    <div id="div2">박스2</div>
+    <div id="div3">박스3</div>
+    <div class="div4">박스4</div>
+    <div class="div4">박스5</div>
   </body>
+  <script>
+    /*
+    화면 (document) 에 있는 여러 요소 (selector) 들 중에
+    id 가 div2 인 (#div2) 요소를 JS 에서 사용할 수 있도록
+    객체변수로 변환하기
+    
+    const 는 자바의 final 과 같다
+    */
+    const div2 = document.querySelector("#div2");
+    const div3 = document.querySelector("div#div3");
+    const div4 = document.querySelectorAll("div.div4");
+
+    const onClickHandler1 = (e) => {
+      div2.innerHTML = "대한민국만세";
+    }; // 2015년 이후 최신 버전 화살표 함수
+    const onClickHandler2 = function (e) {
+      div3.style.backgroundColor = "yellow";
+      div3.style.color = "blue";
+      div3.style.fontSize = "30px";
+    }; // 2015년 이전
+    function onClickHandler3(e) {
+      div4[0].style.backgroundColor = "#aaa";
+      div4[1].style.backgroundColor = "blue";
+    } // Old
+
+    div2.addEventListener("click", onClickHandler1);
+    div3.addEventListener("click", onClickHandler2);
+    div4[0].addEventListener("click", onClickHandler3);
+    div4[1].addEventListener("click", onClickHandler3);
+  </script>
 </html>
