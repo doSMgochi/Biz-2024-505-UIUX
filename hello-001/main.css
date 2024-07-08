@@ -24,6 +24,41 @@ fieldset {
 }
 
 legend {
-  margin: 15px;
+  padding: 15px;
   text-align: center;
+  color: rgb(255, 129, 161);
+  font-weight: bold;
+}
+
+form div {
+  width: 90%;
+  margin: 5px auto;
+  display: flex;
+}
+
+form label,
+form input {
+  padding: 8px;
+}
+
+form label {
+  flex: 1;
+  text-align: right;
+  color: #a8444485;
+}
+
+form input {
+  flex: 3;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #777;
+}
+
+form input:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+form input:focus {
+  border: 1px solid rgb(94, 116, 163);
 }
