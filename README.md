@@ -42,6 +42,7 @@
 - Editor, Font Family : D2Coding 으로 변경하기
 
 - formmatter 검색하여 `Prettier formatter`로 설정하기
+
   ![alt text](image-5.png)
   ![alt text](image-6.png)
 
