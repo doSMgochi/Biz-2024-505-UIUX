@@ -1,3 +1,5 @@
+"use strict";
+
 document.addEventListener("DOMContentLoaded", () => {
   const login_body = document.querySelector("section.login.body");
   const form = login_body.querySelector("form");

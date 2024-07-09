@@ -1,3 +1,5 @@
+"use strict";
+
 const onStart = () => {};
 document.addEventListener("DOMContentLoaded", onStart);
 document.addEventListener("DOMContentLoaded", () => {

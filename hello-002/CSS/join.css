@@ -1,0 +1,51 @@
+section.join.body {
+  form {
+    margin: 10px auto;
+    width: 50vw;
+  }
+
+  fieldset {
+    padding: 2rem;
+    border-radius: 20px;
+  }
+
+  legend {
+    padding: 15px;
+    text-align: center;
+    color: rgb(61, 49, 104);
+    font-weight: bold;
+  }
+
+  form div {
+    width: 60%;
+    margin: 5px auto;
+    display: flex;
+  }
+
+  form label,
+  form input {
+    padding: 8px;
+  }
+
+  form label {
+    flex: 1;
+    text-align: right;
+    color: #37265e85;
+  }
+
+  form input {
+    flex: 3;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #777;
+  }
+
+  form input:hover {
+    background-color: #ddd;
+    cursor: pointer;
+  }
+
+  form input:focus {
+    border: 1px solid rgb(94, 116, 163);
+  }
+}
