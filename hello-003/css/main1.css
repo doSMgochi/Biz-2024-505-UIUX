@@ -11,7 +11,8 @@ header {
 }
 section.main {
   text-align: center;
-
+  flex: 1;
+  height: 80%;
   display: flex;
   /*
   flex box 내부의 item 들은 기본적으로 가로방향으로 한 줄로 표현이 된다
@@ -29,6 +30,7 @@ section.main {
     padding: 5%;
 
     img {
+      min-width: 180px;
       width: 95%;
       border-radius: 10px;
       transition: 0.7s;
@@ -53,4 +55,16 @@ section.main {
 footer {
   background-color: #eee;
   text-align: center;
+}
+
+section.detail {
+  width: 90%;
+  margin: 10px auto;
+  article {
+    width: 100%;
+  }
+}
+
+li {
+  list-style: none;
 }
